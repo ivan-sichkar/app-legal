@@ -1,0 +1,250 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f7;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    min-height: 100vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #1d1d1f;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #6e6e73;
+}
+
+.last-updated {
+    font-size: 0.9rem;
+    color: #86868b;
+    font-style: italic;
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+    padding: 20px 0;
+    font-size: 0.9rem;
+    color: #6e6e73;
+}
+
+.breadcrumb a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding-bottom: 40px;
+}
+
+/* Card Sections */
+.card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.card h2 {
+    color: #1d1d1f;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.card p {
+    color: #6e6e73;
+    font-size: 1.05rem;
+}
+
+/* Document Cards Grid */
+.documents {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.document-card {
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.document-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-color: #0066cc;
+}
+
+.document-card h3 {
+    color: #1d1d1f;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.document-card p {
+    color: #6e6e73;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0066cc;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0055b3;
+}
+
+/* Legal Content */
+.legal-content {
+    line-height: 1.8;
+}
+
+.legal-content section {
+    margin-bottom: 40px;
+}
+
+.legal-content h2 {
+    color: #1d1d1f;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+
+.legal-content h3 {
+    color: #1d1d1f;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.legal-content p {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.legal-content ul {
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.legal-content li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.legal-content strong {
+    color: #1d1d1f;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    border-top: 2px solid #e0e0e0;
+    margin-top: 40px;
+    color: #6e6e73;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #0066cc;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .document-card {
+        padding: 20px;
+    }
+
+    .documents {
+        grid-template-columns: 1fr;
+    }
+
+    .legal-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .legal-content h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+}

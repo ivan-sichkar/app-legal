@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for mobile applications">
+    <title>Privacy Policy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="index.html">Home</a> &gt; Privacy Policy
+        </nav>
+
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: <span id="update-date"></span></p>
+        </header>
+
+        <main class="legal-content">
+            <section>
+                <h2>1. Introduction</h2>
+                <p>This Privacy Policy describes how we collect, use, and handle your information when you use our mobile applications ("Apps"). We are committed to protecting your privacy and ensuring transparency about our data practices.</p>
+            </section>
+
+            <section>
+                <h2>2. Information We Collect</h2>
+                <h3>2.1 Information You Provide</h3>
+                <p>We may collect information that you voluntarily provide when using our Apps, which may include:</p>
+                <ul>
+                    <li>Account information (username, email address)</li>
+                    <li>Profile information</li>
+                    <li>Content you create or upload</li>
+                    <li>Communications with us</li>
+                </ul>
+
+                <h3>2.2 Automatically Collected Information</h3>
+                <p>When you use our Apps, we may automatically collect certain information, including:</p>
+                <ul>
+                    <li>Device information (model, operating system, unique device identifiers)</li>
+                    <li>Usage data (features used, actions taken, time spent)</li>
+                    <li>Log data (IP address, access times, app crashes)</li>
+                    <li>Location information (if you grant permission)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>3. How We Use Your Information</h2>
+                <p>We use the collected information for the following purposes:</p>
+                <ul>
+                    <li>To provide, maintain, and improve our Apps</li>
+                    <li>To personalize your experience</li>
+                    <li>To communicate with you about updates, security alerts, and support</li>
+                    <li>To analyze usage patterns and optimize performance</li>
+                    <li>To detect, prevent, and address technical issues or fraudulent activity</li>
+                    <li>To comply with legal obligations</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>4. Data Sharing and Disclosure</h2>
+                <p>We do not sell your personal information. We may share your information in the following circumstances:</p>
+                <ul>
+                    <li><strong>Service Providers:</strong> With third-party service providers who perform services on our behalf (e.g., analytics, hosting, customer support)</li>
+                    <li><strong>Legal Requirements:</strong> When required by law or to protect our rights, property, or safety</li>
+                    <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets</li>
+                    <li><strong>With Your Consent:</strong> When you explicitly agree to share your information</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>5. Third-Party Services</h2>
+                <p>Our Apps may use third-party services that collect information used to identify you. These may include:</p>
+                <ul>
+                    <li>Analytics services (e.g., Google Analytics, Firebase Analytics)</li>
+                    <li>Advertising networks</li>
+                    <li>Social media platforms</li>
+                    <li>Payment processors</li>
+                </ul>
+                <p>These third-party services have their own privacy policies, and we encourage you to review them.</p>
+            </section>
+
+            <section>
+                <h2>6. Data Security</h2>
+                <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet or electronic storage is 100% secure.</p>
+            </section>
+
+            <section>
+                <h2>7. Data Retention</h2>
+                <p>We retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law.</p>
+            </section>
+
+            <section>
+                <h2>8. Your Rights and Choices</h2>
+                <p>Depending on your location, you may have the following rights:</p>
+                <ul>
+                    <li><strong>Access:</strong> Request access to your personal information</li>
+                    <li><strong>Correction:</strong> Request correction of inaccurate information</li>
+                    <li><strong>Deletion:</strong> Request deletion of your personal information</li>
+                    <li><strong>Portability:</strong> Request a copy of your data in a portable format</li>
+                    <li><strong>Opt-out:</strong> Opt-out of certain data collection or marketing communications</li>
+                    <li><strong>Withdraw Consent:</strong> Withdraw previously given consent</li>
+                </ul>
+                <p>To exercise these rights, please contact us through the contact information provided in the respective App store listing.</p>
+            </section>
+
+            <section>
+                <h2>9. Children's Privacy</h2>
+                <p>Our Apps are not intended for children under the age of 13 (or the applicable age in your jurisdiction). We do not knowingly collect personal information from children. If we discover that we have collected information from a child, we will delete it promptly.</p>
+            </section>
+
+            <section>
+                <h2>10. International Data Transfers</h2>
+                <p>Your information may be transferred to and processed in countries other than your country of residence. We take appropriate measures to ensure that your personal information remains protected in accordance with this Privacy Policy.</p>
+            </section>
+
+            <section>
+                <h2>11. Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.</p>
+            </section>
+
+            <section>
+                <h2>12. Contact Us</h2>
+                <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us through the contact information provided in the respective App store listing.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p><a href="index.html">Back to Home</a> | <a href="terms-of-use.html">Terms of Use</a></p>
+            <p>&copy; <span id="year"></span> All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('update-date').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+</html>
