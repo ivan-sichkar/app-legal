@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Support for Gallery Pal, the on-device photo cleaner for iPhone">
+    <title>Gallery Pal Support - Ivan Sichkar Individual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="index.html">Home</a> &gt; Gallery Pal Support
+        </nav>
+
+        <header>
+            <h1>Gallery Pal Support</h1>
+            <p class="subtitle">Photo cleaner for iPhone</p>
+            <p class="last-updated">Last Updated: October 3, 2026</p>
+        </header>
+
+        <main class="legal-content">
+            <section class="card">
+                <h2>Contact</h2>
+                <p>Questions, problems or ideas? Write to <a href="mailto:ivan.sichkar.dev@gmail.com?subject=Gallery%20Pal">ivan.sichkar.dev@gmail.com</a>. Please include your iPhone model, iOS version and the Gallery Pal version (Settings, at the bottom of the screen). I usually reply within two working days.</p>
+            </section>
+
+            <section>
+                <h2>Your photos and privacy</h2>
+                <p><strong>Are my photos uploaded anywhere?</strong> No. Gallery Pal analyzes your library on your iPhone: duplicates, similar shots, screenshot sorting, blurry photos and video compression all run on the device. No photo, video, thumbnail or recognized text leaves your iPhone, and no account is needed.</p>
+                <p><strong>What data does the app send?</strong> Anonymous usage statistics and crash reports (Google Firebase), which help fix problems and improve the app. They never contain photos, file names, text from screenshots or photo locations. Details are in the <a href="gallery-pal-privacy.html">Privacy Policy</a>.</p>
+                <p><strong>Why does Gallery Pal ask for full photo access?</strong> To find duplicates and similar photos it has to compare your whole library. With limited access it works only on the photos you selected. You can change this at any time in Settings &gt; Privacy &amp; Security &gt; Photos &gt; Gallery Pal.</p>
+            </section>
+
+            <section>
+                <h2>Deleting and restoring</h2>
+                <p><strong>Can I undo a deletion?</strong> Yes. Nothing is deleted without the iOS confirmation dialog, and deleted photos and videos go to the Recently Deleted album in the Photos app, where they stay for 30 days. Open Photos &gt; Albums &gt; Recently Deleted to recover them.</p>
+                <p><strong>I deleted photos but my storage did not change.</strong> iOS frees the space when items leave Recently Deleted. Empty that album in the Photos app to free it right away. If you use iCloud Photos with "Optimize iPhone Storage", some of the space is freed in iCloud rather than on the iPhone.</p>
+                <p><strong>Which photo of a group does Gallery Pal keep?</strong> In each group of duplicates or similar shots it suggests the best one to keep, preferring favorites, edited photos and higher resolution. You can change the selection before deleting.</p>
+            </section>
+
+            <section>
+                <h2>Videos</h2>
+                <p><strong>What happens when I compress a video?</strong> Gallery Pal saves a smaller HEVC copy with the same date, location, favorite status and albums. The original is deleted only if you choose to, and then it goes to Recently Deleted like any other deletion.</p>
+                <p><strong>A video takes long to start compressing.</strong> If the original is stored in iCloud, it is downloaded first, which needs an internet connection and can take a while for long videos. The screen shows "Downloading from iCloud…" until the compression itself starts.</p>
+            </section>
+
+            <section>
+                <h2>Gallery Pal Pro</h2>
+                <p><strong>What is free?</strong> Scanning, browsing and size estimates are always free. Deleting, group cleaning, video compression and bulk screenshot deletion each have a free allowance; you can see what is left in Settings.</p>
+                <p><strong>What does Pro include?</strong> Pro removes the free limits. It is available weekly (with a free trial for new subscribers), monthly or yearly. Prices are shown in the app before you subscribe.</p>
+                <p><strong>How do I cancel?</strong> Open the Settings app on your iPhone, tap your name, then Subscriptions, and choose Gallery Pal. You can also open it from Gallery Pal: Settings &gt; Manage Subscription. Cancel at least 24 hours before the end of the current period to avoid the next charge.</p>
+                <p><strong>I subscribed but Pro is not active.</strong> In Gallery Pal, go to Settings &gt; Restore Purchases. Make sure you are signed in with the same Apple Account you used to subscribe.</p>
+                <p><strong>How do I get a refund?</strong> Payments are handled by Apple. Request a refund at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="year"></span> Ivan Sichkar. All rights reserved. <a href="gallery-pal-privacy.html">Privacy Policy</a> &middot; <a href="terms-of-use.html">Terms of Use</a></p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

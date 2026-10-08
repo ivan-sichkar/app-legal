@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy policy for Gallery Pal, the on-device photo cleaner for iPhone">
+    <title>Gallery Pal Privacy Policy - Ivan Sichkar Individual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="index.html">Home</a> &gt; Gallery Pal Privacy Policy
+        </nav>
+
+        <header>
+            <h1>Gallery Pal Privacy Policy</h1>
+            <p class="subtitle">Photo cleaner for iPhone</p>
+            <p class="last-updated">Effective date: October 8, 2026</p>
+        </header>
+
+        <main class="legal-content">
+            <section class="card">
+                <h2>The short version</h2>
+                <p>Your photos and videos never leave your iPhone. Gallery Pal analyzes them on the device and uploads nothing from your library. The app sends anonymous usage statistics and crash reports to Google Firebase so I can see which features help and fix problems. That data is not linked to your identity, not used for advertising and not used to track you.</p>
+            </section>
+
+            <section>
+                <h2>Who is responsible</h2>
+                <p>Gallery Pal is published by Ivan Sichkar, an individual developer. For any privacy question or request, write to <a href="mailto:ivan.sichkar.dev@gmail.com?subject=Gallery%20Pal%20privacy">ivan.sichkar.dev@gmail.com</a>.</p>
+            </section>
+
+            <section>
+                <h2>Your photos and videos</h2>
+                <p>Gallery Pal reads your photo library only after you allow it in the iOS permission dialog, and only to find duplicates, similar shots, screenshots, blurry photos, large videos and Live Photos.</p>
+                <p>All of this runs on your iPhone: image fingerprints, text recognition in screenshots, sharpness checks and video compression. No photo, video, thumbnail, fingerprint, recognized text or photo location is sent anywhere.</p>
+                <p>The results are kept in a database inside the app. It is excluded from iCloud backups and deleted when you delete the app. Nothing is deleted from your library without your confirmation in the iOS dialog, and deleted items stay in Recently Deleted for 30 days.</p>
+            </section>
+
+            <section>
+                <h2>Data the app sends</h2>
+                <p>Gallery Pal uses three Google Firebase services. They receive the following, none of which includes your photos, file names, text from screenshots or photo locations.</p>
+                <p><strong>Firebase Analytics</strong> (usage statistics):</p>
+                <ul>
+                    <li>How the app is used, for example "scan completed" with the number of groups found, "paywall shown" or "video compressed" with the megabytes saved, and which screens are opened.</li>
+                    <li>Purchase events, such as a started trial or a subscription purchase with the plan chosen. Payment details are never included.</li>
+                    <li>A few settings about your library and the app: a rough library size range (for example "10-50k"), whether access is full or limited, the app language, and whether you have Pro.</li>
+                    <li>An app-instance identifier created by Firebase, the device model, iOS version, app version and language. Google derives an approximate country from the connection; your IP address is not stored in the reports.</li>
+                </ul>
+                <p><strong>Firebase Crashlytics</strong> (crash reports): when the app crashes or an operation fails, a report with the technical details (where in the code it happened, the device model, iOS version, free memory and storage) and a random installation identifier.</p>
+                <p><strong>Firebase Remote Config</strong> (settings): the app downloads settings such as the size of the free allowance. To do that it sends a random installation identifier and the app version.</p>
+                <p>This data is not linked to your name, email or Apple Account, is not combined with data from other apps or websites, and is not used for advertising. Gallery Pal does not use the advertising identifier (IDFA) and does not show ads.</p>
+                <p>Why: to understand which features are useful, to find and fix crashes, and to adjust the app without an update. Where the GDPR applies, the legal basis is my legitimate interest in keeping the app working and improving it.</p>
+                <p>Google processes this data on my behalf, mainly in the United States, under the Google Firebase data processing terms and the EU-U.S. Data Privacy Framework. Details: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</p>
+            </section>
+
+            <section>
+                <h2>How long data is kept</h2>
+                <ul>
+                    <li>Analytics events: 14 months, then deleted by Google Analytics.</li>
+                    <li>Crash reports: 90 days.</li>
+                    <li>Data on your iPhone: until you delete the app. One exception: the count of free actions you have used is stored in the iOS Keychain, which iOS may keep after the app is deleted, so the free allowance is not reset by reinstalling.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Purchases</h2>
+                <p>Subscriptions are sold and processed by Apple. Gallery Pal never sees your payment details or Apple Account. The app learns from the App Store only whether your subscription is active, to unlock Pro.</p>
+            </section>
+
+            <section>
+                <h2>Your choices and rights</h2>
+                <ul>
+                    <li>Change or remove photo access at any time in Settings &gt; Privacy &amp; Security &gt; Photos &gt; Gallery Pal.</li>
+                    <li>Deleting the app removes its database and settings and gives a new install a new app-instance identifier.</li>
+                    <li>You can ask for access to or deletion of data, or object to its use, by writing to the email above. Because the data is not linked to your identity, I may need your help to find it, for example the date and device you used.</li>
+                    <li>If you are in the EU, the UK or another region with data protection laws, you can also complain to your local data protection authority.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Children</h2>
+                <p>Gallery Pal is not directed at children under 13 and does not knowingly collect their data.</p>
+            </section>
+
+            <section>
+                <h2>Changes</h2>
+                <p>If this policy changes, the new version is published on this page with a new effective date. Significant changes are also mentioned in the App Store release notes.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="year"></span> Ivan Sichkar. All rights reserved. <a href="terms-of-use.html">Terms of Use</a> &middot; <a href="gallery-pal-support.html">Gallery Pal Support</a></p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
